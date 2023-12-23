@@ -7,9 +7,10 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const Body=styled.div`
-  background-color:${({theme})=>theme.bg};
+const Body = styled.div`
+  background-color:${({ theme }) => theme.bg};
   width:100%;
   overflow-x:hidden;
 `
@@ -22,18 +23,20 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Navbar/>
-      <Body>
-          <Hero/>
+      <Router>
+        <Navbar />
+        <Body>
+          <Hero />
           <Wrapper>
-            <Skills/>
-            <Education/>
+            <Skills />
+            <Education />
           </Wrapper>
           <Wrapper>
-            <Education/>
-            <Contact/>
+            <Education />
+            <Contact />
           </Wrapper>
-      </Body>
+        </Body>
+      </Router>
     </ThemeProvider>
   );
 }
