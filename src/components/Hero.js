@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
+import HeroAnimation from './HeroAnimation';
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -188,11 +189,13 @@ const Hero = () => {
   return (
     <div id='about'>
       <HeroContainer>
-        <HeroBackground></HeroBackground>
+        <HeroBackground>
+          <HeroAnimation/>
+        </HeroBackground>
         <HeroInnerContainer>
           <HeroLeft>
             <Name>
-              Hi, I am Mohan
+              Hi, I am <br/> Mohan I
             </Name>
             <TextLoop>
               I am a
