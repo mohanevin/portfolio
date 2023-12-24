@@ -123,14 +123,17 @@ const ContactButton = styled.input`
 
 
 const Contact = () => {
-
+  const serviceID=process.env.REACT_APP_SERVICE_ID;
+  const templateID=process.env.REACT_APP_TEMPLATEID;
+  const ID=process.env.REACT_APP_ID;
+  console.log(serviceID,templateID,ID)
   const form = useRef();
   const [open, setOpen] = React.useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_0vybc9n', 'template_jqyvzv3', form.current, '7dlbUxNm7yTRZMmQz')
+    emailjs.sendForm(serviceID, templateID, form.current, ID)
       .then((result) => {
           console.log(result.text);
           setOpen(true);
