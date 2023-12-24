@@ -36,8 +36,8 @@ function App() {
             <Projects/>
             <Contact />
           </Wrapper>
+          <Footer/>
         </Body>
-        <Footer/>
       </Router>
     </ThemeProvider>
   );
