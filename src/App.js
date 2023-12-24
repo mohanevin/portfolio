@@ -5,9 +5,10 @@ import { darkTheme } from './utils/theme';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
-import Education from './components/Education';
 import Contact from './components/Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 const Body = styled.div`
   background-color:${({ theme }) => theme.bg};
@@ -29,10 +30,10 @@ function App() {
           <Hero />
           <Wrapper>
             <Skills />
-            <Education />
+            <Experience/>
           </Wrapper>
           <Wrapper>
-            <Education />
+            <Projects/>
             <Contact />
           </Wrapper>
         </Body>

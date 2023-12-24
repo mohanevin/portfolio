@@ -187,7 +187,7 @@ const Navbar = () => {
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#experience'>Experience</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
-                    <NavLink href='#education'>Education</NavLink>
+                    <NavLink href='#contact'>Contact</NavLink>
                 </NavItem>
                 <ButtonContainer>
                     <ResumeButton>Resume</ResumeButton>
@@ -206,9 +206,9 @@ const Navbar = () => {
                         <MobileLink href='#projects' onClick={() => {
                             setIsOpen(!isOpen)
                         }}>Projects</MobileLink>
-                        <MobileLink href='#education' onClick={() => {
+                        <MobileLink href='#contact' onClick={() => {
                             setIsOpen(!isOpen)
-                        }}>Education</MobileLink>
+                        }}>Contact</MobileLink>
                         <ResumeButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'black',width: 'max-content'}} href='/' target="_blank">Resume</ResumeButton>
                     </MobileMenu>
                 }

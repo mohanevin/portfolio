@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import HeroAnimation from './HeroAnimation';
+import Lottie from "lottie-react";
+import animationData from '../assets/Animation.json'
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -181,6 +183,23 @@ const ResumeButton = styled.a`
     } 
 
 `;
+const Img = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
 
 const Hero = () => {
 
@@ -213,7 +232,9 @@ const Hero = () => {
             <ResumeButton target='display'>Check Resume</ResumeButton>
           </HeroLeft>
           <HeroRight>
-
+                <Img>
+                    <Lottie animationData={animationData} loop={true} />
+                </Img>
           </HeroRight>
         </HeroInnerContainer>
       </HeroContainer>
