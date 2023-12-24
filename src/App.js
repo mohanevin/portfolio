@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   background: linear-gradient(135deg, #1a1a1a, #333333);
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
+
 `
 
 function App() {
