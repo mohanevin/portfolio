@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa';
+import { useTheme } from 'styled-components';
 
 
 const Nav = styled.div`
@@ -167,6 +168,7 @@ const MobileLink = styled.a`
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const theme = useTheme()
     return (
         <Nav>
             <NavContainer>
@@ -207,7 +209,7 @@ const Navbar = () => {
                         <MobileLink href='#education' onClick={() => {
                             setIsOpen(!isOpen)
                         }}>Education</MobileLink>
-                        <ResumeButton  href='/' target="_blank">Resume</ResumeButton>
+                        <ResumeButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'black',width: 'max-content'}} href='/' target="_blank">Resume</ResumeButton>
                     </MobileMenu>
                 }
             </NavContainer>
