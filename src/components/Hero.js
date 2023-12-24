@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import HeroAnimation from './HeroAnimation';
 import Lottie from "lottie-react";
-import animationData from '../assets/Animation.json'
+import animationData from '../assets/animation/Animation.json'
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};

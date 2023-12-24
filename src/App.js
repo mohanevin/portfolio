@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 const Body = styled.div`
   background-color:${({ theme }) => theme.bg};
@@ -18,8 +19,6 @@ const Body = styled.div`
 const Wrapper = styled.div`
   background: linear-gradient(135deg, #1a1a1a, #333333);
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
-
 `
 
 function App() {
@@ -38,6 +37,7 @@ function App() {
             <Contact />
           </Wrapper>
         </Body>
+        <Footer/>
       </Router>
     </ThemeProvider>
   );
