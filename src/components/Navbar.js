@@ -190,7 +190,7 @@ const Navbar = () => {
                     <NavLink href='#contact'>Contact</NavLink>
                 </NavItem>
                 <ButtonContainer>
-                    <ResumeButton>Resume</ResumeButton>
+                    <ResumeButton target='_blank' href='https://drive.google.com/file/d/1-G3sS-kL68qlva0vXTGsJcyKWXg1Bbqu/view?usp=sharing'>Resume</ResumeButton>
                 </ButtonContainer>
                 {
                     isOpen && <MobileMenu isOpen={isOpen}>
@@ -209,7 +209,7 @@ const Navbar = () => {
                         <MobileLink href='#contact' onClick={() => {
                             setIsOpen(!isOpen)
                         }}>Contact</MobileLink>
-                        <ResumeButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'black',width: 'max-content'}} href='/' target="_blank">Resume</ResumeButton>
+                        <ResumeButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'black',width: 'max-content'}} href='https://drive.google.com/file/d/1-G3sS-kL68qlva0vXTGsJcyKWXg1Bbqu/view?usp=sharing' target="_blank">Resume</ResumeButton>
                     </MobileMenu>
                 }
             </NavContainer>

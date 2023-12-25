@@ -227,7 +227,7 @@ const Hero = () => {
               </Span>
             </TextLoop>
             <SubTitle>{bio}</SubTitle>
-            <ResumeButton target='display'>Check Resume</ResumeButton>
+            <ResumeButton target='display' href='https://drive.google.com/file/d/1-G3sS-kL68qlva0vXTGsJcyKWXg1Bbqu/view?usp=sharing'>Check Resume</ResumeButton>
           </HeroLeft>
           <HeroRight>
                 <Img>
